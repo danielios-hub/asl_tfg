@@ -1,0 +1,42 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+%% begin abstract format
+\makeatletter
+\renewenvironment{abstract}{%
+    \if@twocolumn
+      \section*{Resumen \\}%
+    \else %% <- here I've removed \small
+    \begin{flushright}
+        {\filleft\Huge\bfseries\fontsize{48pt}{12}\selectfont Resumen\vspace{\z@}}%  %% <- here I've added the format
+        \end{flushright}
+      \quotation
+    \fi}
+    {\if@twocolumn\else\endquotation\fi}
+\makeatother
+%% end abstract format
+%% begin abstract format
+\makeatletter
+\renewenvironment{abstract}{%
+    \if@twocolumn
+      \section*{Resumen \\}%
+    \else %% <- here I've removed \small
+    \begin{flushright}
+        {\filleft\Huge\bfseries\fontsize{48pt}{12}\selectfont Resumen\vspace{\z@}}%  %% <- here I've added the format
+        \end{flushright}
+      \quotation
+    \fi}
+    {\if@twocolumn\else\endquotation\fi}
+\makeatother
+%% end abstract format
+\begin{abstract}
+Desarrollo de una aplicación móvil para iOS, que es capaz de identificar en tiempo real letras de la lengua de signos americana(ASL). El usuario podrá seleccionar la cámara del dispositivo o un video y la aplicación intentará detectar las manos de una persona, en caso de éxito, realizará una predicción para identificar qué letra está realizando con la mano.
+
+La aplicación será realizada en Swift y utiliza un modelo de Deep Learning para las predicciones. Para el desarrollo del modelo, se utiliza Keras como una librería para la generación y el entrenamiento. Consistirá en una red neuronal que será capaz de realizar predicciones sobre 24 letras, excluyendo letras cuya representación no será un gesto estático, y que está desarrollada para su uso en dispositivos móviles, especialmente iOS.
+
+Se utiliza como lenguaje ASL especialmente por la multitud de conjuntos de imágenes que son públicos y que se utilizan para el entrenamiento del modelo. Si bien su adaptación a LSE (Lengua de Signos Española) consistirá simplemente en su adaptación a un conjunto de imágenes del lenguaje de signos en español, puesto que el proyecto contiene todas las herramientas para su adaptación a otro lenguaje.
+
+\bfseries{\large{Palabras clave:}} iOS, Machine Learning, Sign Language, Swift, Keras 
+
+\end{abstract}
+\end{document}

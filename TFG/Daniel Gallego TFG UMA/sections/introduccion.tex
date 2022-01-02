@@ -1,0 +1,54 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\subsection{Motivación}
+Este proyecto surge para investigar el uso de algoritmos de Deep Learning en dispositivos móviles. Por este motivo, surge como una investigación de cara al futuro, cuyo objetivo es investigar la capacidad de trabajar con este tipo de algoritmos en los dispositivos móviles iOS de última generación. 
+El proyecto se enfoca en la interpretación del lenguaje de signos ASL.  Si bien es una primera toma de contacto para su interpretación, se trata de ver si es posible su interpretación bajo las capacidades de un dispositivo móvil y si puede realizarse en un tiempo de respuesta suficientemente rápido como para actuar como un intérprete. 
+
+ASL es un lenguaje dinámico que es expresado mediante el movimiento de las manos y la cara. Se plantea el proyecto como un primer paso para lograr este objetivo final. El proyecto identificará 24 letras del alfabeto realizado con ASL. Se excluyen las letras cuya representación requiere de un gesto dinámico. Si bien la motivación es poder ser capaz de interpretar gestos que simbolizan palabras o frases, el proyecto se plantea solamente como un primer paso para ello.
+
+La principal motivación del proyecto surge para resolver los dos siguientes casos de uso:
+
+\begin{enumerate}
+    \item Interpretación del lenguaje de signos: una persona sin conocimientos sobre ASL, necesita entender a otra que se está comunicando mediante este lenguaje, la aplicación se encargará de interpretar y comunicar el lenguaje de signos.
+    \item Investigación sobre las capacidades de los dispositivos móviles en la ejecución de algoritmos de Machine Learning: Demostrar que los dispositivos iOS de última generación pueden resolver este tipo de problemas en tiempo real y que lo aprendido en este proyecto puede ser igualmente aplicado a cualquier tipo de aplicación que se enfoque en detectar que está haciendo una persona.
+\end{enumerate}
+
+\subsection{Objetivos}
+El objetivo del proyecto es tener un sistema completo que va desde el desarrollo de un modelo de Deep Learning y su entrenamiento, exportación del modelo para su uso en dispositivos iOS, y tener una aplicación móvil que use este modelo como base para la interpretación del lenguaje de signos.
+Se utilizarán Datasets públicos del ASL para el entrenamiento del modelo, pero el objetivo del proyecto es que el sistema sea fácilmente adaptable a otros lenguajes. Para su consecución, se consideran los siguientes objetivos:
+
+\begin{itemize}
+    \item Proporcionar todas las componentes del sistema para que, con otro Dataset de un lenguaje diferente, se genere todo el proceso para tener una aplicación lista para interpretar ese lenguaje.
+    \item La aplicación admitirá diferentes tipos de entrada: la cámara del dispositivo, selección de videos desde la librería del teléfono o iCloud y mostrará por pantalla la identificación de letras. 
+    \item El proyecto se plantea como una investigación sobre la capacidad de los dispositivos iOS para interpretar este tipo de algoritmos en tiempo real e intentar exprimir al máximo sus capacidades, por lo que sólo se considerará su buen funcionamiento únicamente en dispositivos de última generación como el iPhone 12 Pro.
+    \item El modelo de Deep Learning está desarrollado específicamente  para su uso en dispositivos móviles iOS y en tiempo real. Por lo tanto, aspectos como su peso y rapidez son fundamentales. Se utilizará Keras para la generación y entrenamiento del modelo.
+    \item Privacidad y consumo de datos: Todo el procesamiento de datos se llevará a cabo en el dispositivo sin la ayuda de un servidor externo, de forma que se asegura la total privacidad del usuario y el uso mínimo de la red.
+\end{itemize}
+
+\newpage
+
+\subsection{Tecnologías usadas}
+Para el desarrollo del proyecto se utilizan los siguientes lenguaje de programación y tecnologías:
+\begin{itemize}
+    \item Swift: Lenguaje de programación para el desarrollo de la aplicación móvil. 
+    \item Vision y CoreML: Frameworks iOS utilizados para el reconocimiento de imágenes y Machine Learning.
+    \item Python, Keras: Python es el lenguaje de programación utilizado junto con Keras como framework para la generación y entrenamiento de un modelo de Machine Learning
+    \item Django: Se utilizará Django como API REST en una parte del proyecto.
+\end{itemize}
+
+\subsection{Estructura del documento}
+La memoria se compone de los siguientes capítulos:
+\begin{enumerate}
+    \item Introducción: Desarrollo de los objetivos, motivación, tecnologías usadas y explicación de la estructura del proyecto.
+    \item Bases del proyecto: Explicación de las bases del proyecto y los diferentes componentes necesarios para el funcionamiento del sistema completo.
+    \item API REST: Proporcionará un api para obtener las imágenes del dataset.
+    \item Extracción de características: Desarrollo del componente encargado de la extracción de características que van a ser usadas para el entrenamiento de un modelo de Deep Learning.
+    \item Modelo: Desarrollo del modelo de Deep Learning, así como su entrenamiento y su exportación a un formato compatible con iOS.
+    \item Intérprete: Desarrollo de la aplicación móvil para iOS encargada de la interpretación del lenguaje de signos.
+    \item Resultados y pruebas de las diferentes configuraciones utilizadas.
+    \item Conclusiones y líneas futuras.
+\end{enumerate}
+
+\end{document}

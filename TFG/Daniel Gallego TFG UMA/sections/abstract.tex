@@ -1,0 +1,28 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+%% begin abstract format
+\makeatletter
+\renewenvironment{abstract}{%
+    \if@twocolumn
+      \section*{Abstract \\}%
+    \else %% <- here I've removed \small
+    \begin{flushright}
+        {\filleft\Huge\bfseries\fontsize{48pt}{12}\selectfont Abstract\vspace{\z@}}%  %% <- here I've added the format
+        \end{flushright}
+      \quotation
+    \fi}
+    {\if@twocolumn\else\endquotation\fi}
+\makeatother
+%% end abstract format
+\begin{abstract}
+
+Development of a mobile application for iOS which will be able to recognize in real time letters from American sign Language. The user will select the camera of the device or a video as an input and the application will try to detect the hand of a person, in case of success, the application will perform a prediction about which letter the hand is representing.
+The mobile application is developed in Swift and it is using a Deep Learning model for the prediction. The development of a model is using Keras as a framework for the generation and training of the model. The model consists of a neural network that will be able to perform predictions about 24 letters of the American Sign Language(ASL), excluding letters whose representation is not a static gesture. The model is developed for the use in mobile devices, especially iOS.
+The application uses ASL as a language to detect because there are multiple public datasets of images available, and these datasets are used for the training of the model. But the adaptation to the LSE(Spanish Sign Language) is simple, with a good dataset of images about LSE the project can generate a new model for the application to use it.
+
+
+\bfseries{\large{Keywords:}} iOS, Machine Learning, Sign Language, Swift, Keras
+
+\end{abstract}
+\end{document}
