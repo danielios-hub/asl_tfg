@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Extract Features PicturesVC-->
+        <scene sceneID="vVj-hc-Vxd">
+            <objects>
+                <viewController storyboardIdentifier="ExtractFeaturesPicturesVC" id="Ovo-EJ-psh" customClass="ExtractFeaturesPicturesVC" customModule="HandPoseFeaturePoints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fg2-Kg-gNO" customClass="ExtractFeaturesPicturesView" customModule="HandPoseFeaturePoints" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UAl-bM-YM0">
+                                <rect key="frame" x="0.0" y="281" width="414" height="581"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdd-DB-kW5">
+                                <rect key="frame" x="207" y="94" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="jNJ-DA-WFK">
+                                <rect key="frame" x="188.5" y="114" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.60784313729999995" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqb-X7-7SU">
+                                <rect key="frame" x="132" y="171" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="RCE-7Z-zed"/>
+                                    <constraint firstAttribute="width" constant="150" id="ai3-jv-SfV"/>
+                                </constraints>
+                                <state key="normal" title="Load Images">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZi-n3-EiF">
+                                <rect key="frame" x="82" y="226" width="250" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BWj-NL-Y5a"/>
+                                    <constraint firstAttribute="width" constant="250" id="iap-fo-twm"/>
+                                </constraints>
+                                <state key="normal" title="Download lastest Results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qNc-cO-kgI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RZi-n3-EiF" firstAttribute="centerX" secondItem="fg2-Kg-gNO" secondAttribute="centerX" id="7an-8h-TKH"/>
+                            <constraint firstItem="UAl-bM-YM0" firstAttribute="leading" secondItem="qNc-cO-kgI" secondAttribute="leading" id="EQb-Bb-DXz"/>
+                            <constraint firstItem="RZi-n3-EiF" firstAttribute="top" secondItem="Kqb-X7-7SU" secondAttribute="bottom" constant="20" id="J8E-gd-a2w"/>
+                            <constraint firstItem="Kqb-X7-7SU" firstAttribute="centerX" secondItem="fg2-Kg-gNO" secondAttribute="centerX" id="KKB-Hs-lhP"/>
+                            <constraint firstItem="jNJ-DA-WFK" firstAttribute="top" secondItem="Rdd-DB-kW5" secondAttribute="bottom" constant="20" id="LbO-zT-jAE"/>
+                            <constraint firstItem="Rdd-DB-kW5" firstAttribute="centerX" secondItem="fg2-Kg-gNO" secondAttribute="centerX" id="NF8-vs-Az7"/>
+                            <constraint firstItem="qNc-cO-kgI" firstAttribute="trailing" secondItem="UAl-bM-YM0" secondAttribute="trailing" id="O6Y-Ir-Fqh"/>
+                            <constraint firstItem="UAl-bM-YM0" firstAttribute="top" secondItem="RZi-n3-EiF" secondAttribute="bottom" constant="20" id="QSn-vX-esK"/>
+                            <constraint firstItem="qNc-cO-kgI" firstAttribute="bottom" secondItem="UAl-bM-YM0" secondAttribute="bottom" id="V5N-oX-RzW"/>
+                            <constraint firstItem="Kqb-X7-7SU" firstAttribute="top" secondItem="jNJ-DA-WFK" secondAttribute="bottom" constant="20" id="WeH-wh-imN"/>
+                            <constraint firstItem="jNJ-DA-WFK" firstAttribute="centerX" secondItem="fg2-Kg-gNO" secondAttribute="centerX" id="cM8-BU-b8Z"/>
+                            <constraint firstItem="Rdd-DB-kW5" firstAttribute="top" secondItem="qNc-cO-kgI" secondAttribute="top" constant="50" id="zIY-rb-thE"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="activityIndicator" destination="jNJ-DA-WFK" id="VGg-UH-vnf"/>
+                            <outlet property="buttonDownload" destination="RZi-n3-EiF" id="7AX-ps-kdV"/>
+                            <outlet property="buttonLoad" destination="Kqb-X7-7SU" id="pjk-Bs-MSI"/>
+                            <outlet property="descriptionLabel" destination="Rdd-DB-kW5" id="Mag-X5-0kH"/>
+                            <outlet property="imageViewPreview" destination="UAl-bM-YM0" id="Jsu-bA-P6A"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="on4-fe-Ze8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397.10144927536237" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
