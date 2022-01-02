@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DGPExtensionCore",
+        "repositoryURL": "https://github.com/danielios-hub/DGPExtensionCore",
+        "state": {
+          "branch": "master",
+          "revision": "4214a92263bd2b1b017f83138b8a05c8880cef9c",
+          "version": null
+        }
+      },
+      {
+        "package": "DGPLibrary",
+        "repositoryURL": "https://github.com/danielios-hub/DGPLibrary",
+        "state": {
+          "branch": "master",
+          "revision": "6e058295c4c72ad1a38aaa1e687008336c72651a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

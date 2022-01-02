@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72BFE54261669170079A296 /* ASLPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE53261669170079A296 /* ASLPreferences.swift */; };
+		C72BFE5C26167C960079A296 /* ConfigurationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE5626167C960079A296 /* ConfigurationPresenter.swift */; };
+		C72BFE5D26167C960079A296 /* ConfigurationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE5726167C960079A296 /* ConfigurationWorker.swift */; };
+		C72BFE5E26167C960079A296 /* ConfigurationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE5826167C960079A296 /* ConfigurationRouter.swift */; };
+		C72BFE5F26167C960079A296 /* ConfigurationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE5926167C960079A296 /* ConfigurationModels.swift */; };
+		C72BFE6026167C960079A296 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE5A26167C960079A296 /* ConfigurationViewController.swift */; };
+		C72BFE6126167C960079A296 /* ConfigurationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE5B26167C960079A296 /* ConfigurationInteractor.swift */; };
+		C72BFE6426167D4F0079A296 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE6326167D4F0079A296 /* ConfigurationView.swift */; };
+		C72BFE67261688C20079A296 /* ConfigurationSliderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE66261688C20079A296 /* ConfigurationSliderViewCell.swift */; };
+		C72BFE6926168B020079A296 /* StepperViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE6826168B020079A296 /* StepperViewCell.swift */; };
+		C72BFE6B26168C890079A296 /* SwitchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE6A26168C890079A296 /* SwitchViewCell.swift */; };
+		C72BFE6D26168E460079A296 /* ConfigurationPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72BFE6C26168E460079A296 /* ConfigurationPickerViewCell.swift */; };
+		C7641C00261083A90029F621 /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641BFA261083A90029F621 /* CameraPresenter.swift */; };
+		C7641C01261083A90029F621 /* CameraWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641BFB261083A90029F621 /* CameraWorker.swift */; };
+		C7641C02261083A90029F621 /* CameraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641BFC261083A90029F621 /* CameraRouter.swift */; };
+		C7641C03261083A90029F621 /* CameraModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641BFD261083A90029F621 /* CameraModels.swift */; };
+		C7641C04261083A90029F621 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641BFE261083A90029F621 /* CameraViewController.swift */; };
+		C7641C05261083A90029F621 /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641BFF261083A90029F621 /* CameraInteractor.swift */; };
+		C7641C08261086E60029F621 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C07261086E60029F621 /* CameraView.swift */; };
+		C7641C1026109BAB0029F621 /* ASLInterpreterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C0A26109BAB0029F621 /* ASLInterpreterPresenter.swift */; };
+		C7641C1126109BAB0029F621 /* ASLInterpreterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C0B26109BAB0029F621 /* ASLInterpreterWorker.swift */; };
+		C7641C1226109BAB0029F621 /* ASLInterpreterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C0C26109BAB0029F621 /* ASLInterpreterRouter.swift */; };
+		C7641C1326109BAB0029F621 /* ASLInterpreterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C0D26109BAB0029F621 /* ASLInterpreterModels.swift */; };
+		C7641C1426109BAB0029F621 /* ASLInterpreterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C0E26109BAB0029F621 /* ASLInterpreterViewController.swift */; };
+		C7641C1526109BAB0029F621 /* ASLInterpreterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C0F26109BAB0029F621 /* ASLInterpreterInteractor.swift */; };
+		C7641C1826109CA30029F621 /* ASLInterpreterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C1726109CA30029F621 /* ASLInterpreterView.swift */; };
+		C7641C1F2610A04A0029F621 /* LabelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C1E2610A04A0029F621 /* LabelClass.swift */; };
+		C7641C222610A0A70029F621 /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C212610A0A70029F621 /* BoundingBoxView.swift */; };
+		C7641C242610A1A70029F621 /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C232610A1A70029F621 /* AnimatedTransitioning.swift */; };
+		C7641C262610A1FB0029F621 /* VNHumanHandExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C252610A1FB0029F621 /* VNHumanHandExtension.swift */; };
+		C7641C302610A4240029F621 /* ASLHandPointv5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C7641C2E2610A4240029F621 /* ASLHandPointv5.mlmodel */; };
+		C7641C312610A4240029F621 /* ASLHandPointv4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C7641C2F2610A4240029F621 /* ASLHandPointv4.mlmodel */; };
+		C7641C3B2610A7260029F621 /* VisionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C3A2610A7260029F621 /* VisionUtils.swift */; };
+		C7641C3D2610A7A80029F621 /* VisionProcessImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C3C2610A7A80029F621 /* VisionProcessImage.swift */; };
+		C7641C442610A94E0029F621 /* OverlayManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C3E2610A94E0029F621 /* OverlayManagerPresenter.swift */; };
+		C7641C452610A94E0029F621 /* OverlayManagerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C3F2610A94E0029F621 /* OverlayManagerWorker.swift */; };
+		C7641C462610A94E0029F621 /* OverlayManagerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C402610A94E0029F621 /* OverlayManagerRouter.swift */; };
+		C7641C472610A94E0029F621 /* OverlayManagerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C412610A94E0029F621 /* OverlayManagerModels.swift */; };
+		C7641C482610A94E0029F621 /* OverlayManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C422610A94E0029F621 /* OverlayManagerViewController.swift */; };
+		C7641C492610A94E0029F621 /* OverlayManagerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7641C432610A94E0029F621 /* OverlayManagerInteractor.swift */; };
+		C76B82A02635B434001DB426 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B829E2635B434001DB426 /* Hand.swift */; };
+		C76B82A12635B434001DB426 /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B829F2635B434001DB426 /* Finger.swift */; };
+		C76B82A426372EF7001DB426 /* ProcessGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B82A326372EF7001DB426 /* ProcessGesture.swift */; };
+		C785F9422630B9EB004CD868 /* ASLHandPointv6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C785F9412630B9EB004CD868 /* ASLHandPointv6.mlmodel */; };
+		C785F9442631F19D004CD868 /* ASLHandPointShortV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C785F9432631F19D004CD868 /* ASLHandPointShortV2.mlmodel */; };
+		C785F9462631FA33004CD868 /* ASLHandPointShortV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C785F9452631FA33004CD868 /* ASLHandPointShortV3.mlmodel */; };
+		C795E0C327821B0F00ECFE09 /* DGPExtensionCore in Frameworks */ = {isa = PBXBuildFile; productRef = C795E0C227821B0F00ECFE09 /* DGPExtensionCore */; };
+		C795E0C627821B1C00ECFE09 /* DGPLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C795E0C527821B1C00ECFE09 /* DGPLibrary */; };
+		C7A82802260FA6DD00739FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A82801260FA6DD00739FBA /* AppDelegate.swift */; };
+		C7A82804260FA6DD00739FBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A82803260FA6DD00739FBA /* SceneDelegate.swift */; };
+		C7A82809260FA6DD00739FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A82807260FA6DD00739FBA /* Main.storyboard */; };
+		C7A8280B260FA6DE00739FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A8280A260FA6DE00739FBA /* Assets.xcassets */; };
+		C7A8280E260FA6DE00739FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A8280C260FA6DE00739FBA /* LaunchScreen.storyboard */; };
+		C7A82820260FA92700739FBA /* SourcePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8281A260FA92700739FBA /* SourcePickerPresenter.swift */; };
+		C7A82821260FA92700739FBA /* SourcePickerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8281B260FA92700739FBA /* SourcePickerWorker.swift */; };
+		C7A82822260FA92700739FBA /* SourcePickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8281C260FA92700739FBA /* SourcePickerRouter.swift */; };
+		C7A82823260FA92700739FBA /* SourcePickerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8281D260FA92700739FBA /* SourcePickerModels.swift */; };
+		C7A82824260FA92700739FBA /* SourcePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8281E260FA92700739FBA /* SourcePickerViewController.swift */; };
+		C7A82825260FA92700739FBA /* SourcePickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8281F260FA92700739FBA /* SourcePickerInteractor.swift */; };
+		C7A82830260FB14F00739FBA /* SourcePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8282F260FB14F00739FBA /* SourcePickerView.swift */; };
+		C7A82839260FBB6800739FBA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A82838260FBB6800739FBA /* Extensions.swift */; };
+		C7B1314D261725AD0025715C /* BaseConfigurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1314C261725AD0025715C /* BaseConfigurationCell.swift */; };
+		C7B1314F26176A290025715C /* ButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1314E26176A290025715C /* ButtonViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7A8282D260FADD800739FBA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C72BFE53261669170079A296 /* ASLPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLPreferences.swift; sourceTree = "<group>"; };
+		C72BFE5626167C960079A296 /* ConfigurationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationPresenter.swift; sourceTree = "<group>"; };
+		C72BFE5726167C960079A296 /* ConfigurationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationWorker.swift; sourceTree = "<group>"; };
+		C72BFE5826167C960079A296 /* ConfigurationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationRouter.swift; sourceTree = "<group>"; };
+		C72BFE5926167C960079A296 /* ConfigurationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModels.swift; sourceTree = "<group>"; };
+		C72BFE5A26167C960079A296 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		C72BFE5B26167C960079A296 /* ConfigurationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationInteractor.swift; sourceTree = "<group>"; };
+		C72BFE6326167D4F0079A296 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		C72BFE66261688C20079A296 /* ConfigurationSliderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationSliderViewCell.swift; sourceTree = "<group>"; };
+		C72BFE6826168B020079A296 /* StepperViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewCell.swift; sourceTree = "<group>"; };
+		C72BFE6A26168C890079A296 /* SwitchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewCell.swift; sourceTree = "<group>"; };
+		C72BFE6C26168E460079A296 /* ConfigurationPickerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationPickerViewCell.swift; sourceTree = "<group>"; };
+		C7641BFA261083A90029F621 /* CameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPresenter.swift; sourceTree = "<group>"; };
+		C7641BFB261083A90029F621 /* CameraWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraWorker.swift; sourceTree = "<group>"; };
+		C7641BFC261083A90029F621 /* CameraRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRouter.swift; sourceTree = "<group>"; };
+		C7641BFD261083A90029F621 /* CameraModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModels.swift; sourceTree = "<group>"; };
+		C7641BFE261083A90029F621 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C7641BFF261083A90029F621 /* CameraInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInteractor.swift; sourceTree = "<group>"; };
+		C7641C07261086E60029F621 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C7641C0A26109BAB0029F621 /* ASLInterpreterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterPresenter.swift; sourceTree = "<group>"; };
+		C7641C0B26109BAB0029F621 /* ASLInterpreterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterWorker.swift; sourceTree = "<group>"; };
+		C7641C0C26109BAB0029F621 /* ASLInterpreterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterRouter.swift; sourceTree = "<group>"; };
+		C7641C0D26109BAB0029F621 /* ASLInterpreterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterModels.swift; sourceTree = "<group>"; };
+		C7641C0E26109BAB0029F621 /* ASLInterpreterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterViewController.swift; sourceTree = "<group>"; };
+		C7641C0F26109BAB0029F621 /* ASLInterpreterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterInteractor.swift; sourceTree = "<group>"; };
+		C7641C1726109CA30029F621 /* ASLInterpreterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLInterpreterView.swift; sourceTree = "<group>"; };
+		C7641C1E2610A04A0029F621 /* LabelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelClass.swift; sourceTree = "<group>"; };
+		C7641C212610A0A70029F621 /* BoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxView.swift; sourceTree = "<group>"; };
+		C7641C232610A1A70029F621 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		C7641C252610A1FB0029F621 /* VNHumanHandExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNHumanHandExtension.swift; sourceTree = "<group>"; };
+		C7641C2E2610A4240029F621 /* ASLHandPointv5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLHandPointv5.mlmodel; sourceTree = "<group>"; };
+		C7641C2F2610A4240029F621 /* ASLHandPointv4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLHandPointv4.mlmodel; sourceTree = "<group>"; };
+		C7641C3A2610A7260029F621 /* VisionUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionUtils.swift; sourceTree = "<group>"; };
+		C7641C3C2610A7A80029F621 /* VisionProcessImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionProcessImage.swift; sourceTree = "<group>"; };
+		C7641C3E2610A94E0029F621 /* OverlayManagerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManagerPresenter.swift; sourceTree = "<group>"; };
+		C7641C3F2610A94E0029F621 /* OverlayManagerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManagerWorker.swift; sourceTree = "<group>"; };
+		C7641C402610A94E0029F621 /* OverlayManagerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManagerRouter.swift; sourceTree = "<group>"; };
+		C7641C412610A94E0029F621 /* OverlayManagerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManagerModels.swift; sourceTree = "<group>"; };
+		C7641C422610A94E0029F621 /* OverlayManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManagerViewController.swift; sourceTree = "<group>"; };
+		C7641C432610A94E0029F621 /* OverlayManagerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManagerInteractor.swift; sourceTree = "<group>"; };
+		C76B829E2635B434001DB426 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		C76B829F2635B434001DB426 /* Finger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		C76B82A326372EF7001DB426 /* ProcessGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessGesture.swift; sourceTree = "<group>"; };
+		C785F9412630B9EB004CD868 /* ASLHandPointv6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLHandPointv6.mlmodel; sourceTree = "<group>"; };
+		C785F9432631F19D004CD868 /* ASLHandPointShortV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLHandPointShortV2.mlmodel; sourceTree = "<group>"; };
+		C785F9452631FA33004CD868 /* ASLHandPointShortV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLHandPointShortV3.mlmodel; sourceTree = "<group>"; };
+		C7A827FE260FA6DD00739FBA /* ASLInterpreter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASLInterpreter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A82801260FA6DD00739FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7A82803260FA6DD00739FBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7A82808260FA6DD00739FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7A8280A260FA6DE00739FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7A8280D260FA6DE00739FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7A8280F260FA6DE00739FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7A8281A260FA92700739FBA /* SourcePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerPresenter.swift; sourceTree = "<group>"; };
+		C7A8281B260FA92700739FBA /* SourcePickerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerWorker.swift; sourceTree = "<group>"; };
+		C7A8281C260FA92700739FBA /* SourcePickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerRouter.swift; sourceTree = "<group>"; };
+		C7A8281D260FA92700739FBA /* SourcePickerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerModels.swift; sourceTree = "<group>"; };
+		C7A8281E260FA92700739FBA /* SourcePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerViewController.swift; sourceTree = "<group>"; };
+		C7A8281F260FA92700739FBA /* SourcePickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerInteractor.swift; sourceTree = "<group>"; };
+		C7A8282F260FB14F00739FBA /* SourcePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerView.swift; sourceTree = "<group>"; };
+		C7A82838260FBB6800739FBA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C7B1314C261725AD0025715C /* BaseConfigurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfigurationCell.swift; sourceTree = "<group>"; };
+		C7B1314E26176A290025715C /* ButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7A827FB260FA6DD00739FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C795E0C627821B1C00ECFE09 /* DGPLibrary in Frameworks */,
+				C795E0C327821B0F00ECFE09 /* DGPExtensionCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C72BFE5526167C720079A296 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C72BFE6226167D3D0079A296 /* Views */,
+				C72BFE5626167C960079A296 /* ConfigurationPresenter.swift */,
+				C72BFE5726167C960079A296 /* ConfigurationWorker.swift */,
+				C72BFE5826167C960079A296 /* ConfigurationRouter.swift */,
+				C72BFE5926167C960079A296 /* ConfigurationModels.swift */,
+				C72BFE5A26167C960079A296 /* ConfigurationViewController.swift */,
+				C72BFE5B26167C960079A296 /* ConfigurationInteractor.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C72BFE6226167D3D0079A296 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C72BFE6326167D4F0079A296 /* ConfigurationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C72BFE65261688AD0079A296 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C72BFE66261688C20079A296 /* ConfigurationSliderViewCell.swift */,
+				C72BFE6826168B020079A296 /* StepperViewCell.swift */,
+				C72BFE6A26168C890079A296 /* SwitchViewCell.swift */,
+				C72BFE6C26168E460079A296 /* ConfigurationPickerViewCell.swift */,
+				C7B1314C261725AD0025715C /* BaseConfigurationCell.swift */,
+				C7B1314E26176A290025715C /* ButtonViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7641BF7261082D00029F621 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				C7641BF9261083400029F621 /* ASLInterpreter */,
+				C7641BF8261083370029F621 /* Camera */,
+				C7641C3E2610A94E0029F621 /* OverlayManagerPresenter.swift */,
+				C7641C3F2610A94E0029F621 /* OverlayManagerWorker.swift */,
+				C7641C402610A94E0029F621 /* OverlayManagerRouter.swift */,
+				C7641C412610A94E0029F621 /* OverlayManagerModels.swift */,
+				C7641C422610A94E0029F621 /* OverlayManagerViewController.swift */,
+				C7641C432610A94E0029F621 /* OverlayManagerInteractor.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		C7641BF8261083370029F621 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C06261086D70029F621 /* Views */,
+				C7641BFA261083A90029F621 /* CameraPresenter.swift */,
+				C7641BFB261083A90029F621 /* CameraWorker.swift */,
+				C7641BFC261083A90029F621 /* CameraRouter.swift */,
+				C7641BFD261083A90029F621 /* CameraModels.swift */,
+				C7641BFE261083A90029F621 /* CameraViewController.swift */,
+				C7641BFF261083A90029F621 /* CameraInteractor.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		C7641BF9261083400029F621 /* ASLInterpreter */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C1626109C910029F621 /* Views */,
+				C7641C0A26109BAB0029F621 /* ASLInterpreterPresenter.swift */,
+				C7641C0B26109BAB0029F621 /* ASLInterpreterWorker.swift */,
+				C7641C0C26109BAB0029F621 /* ASLInterpreterRouter.swift */,
+				C7641C0D26109BAB0029F621 /* ASLInterpreterModels.swift */,
+				C7641C0E26109BAB0029F621 /* ASLInterpreterViewController.swift */,
+				C7641C0F26109BAB0029F621 /* ASLInterpreterInteractor.swift */,
+			);
+			path = ASLInterpreter;
+			sourceTree = "<group>";
+		};
+		C7641C06261086D70029F621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C07261086E60029F621 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7641C1626109C910029F621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C1726109CA30029F621 /* ASLInterpreterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7641C1A26109FF00029F621 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C202610A0A00029F621 /* Views */,
+				C7641C1B26109FF90029F621 /* HandModels */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		C7641C1B26109FF90029F621 /* HandModels */ = {
+			isa = PBXGroup;
+			children = (
+				C76B829F2635B434001DB426 /* Finger.swift */,
+				C76B829E2635B434001DB426 /* Hand.swift */,
+				C7641C1E2610A04A0029F621 /* LabelClass.swift */,
+				C7641C252610A1FB0029F621 /* VNHumanHandExtension.swift */,
+			);
+			path = HandModels;
+			sourceTree = "<group>";
+		};
+		C7641C202610A0A00029F621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C212610A0A70029F621 /* BoundingBoxView.swift */,
+				C7641C232610A1A70029F621 /* AnimatedTransitioning.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7641C272610A3030029F621 /* MachineLearningModels */ = {
+			isa = PBXGroup;
+			children = (
+				C7641C2F2610A4240029F621 /* ASLHandPointv4.mlmodel */,
+				C7641C2E2610A4240029F621 /* ASLHandPointv5.mlmodel */,
+				C785F9412630B9EB004CD868 /* ASLHandPointv6.mlmodel */,
+				C785F9432631F19D004CD868 /* ASLHandPointShortV2.mlmodel */,
+				C785F9452631FA33004CD868 /* ASLHandPointShortV3.mlmodel */,
+			);
+			path = MachineLearningModels;
+			sourceTree = "<group>";
+		};
+		C7A827F5260FA6DD00739FBA = {
+			isa = PBXGroup;
+			children = (
+				C7A82800260FA6DD00739FBA /* ASLInterpreter */,
+				C7A827FF260FA6DD00739FBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7A827FF260FA6DD00739FBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7A827FE260FA6DD00739FBA /* ASLInterpreter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A82800260FA6DD00739FBA /* ASLInterpreter */ = {
+			isa = PBXGroup;
+			children = (
+				C72BFE65261688AD0079A296 /* Cells */,
+				C7641C272610A3030029F621 /* MachineLearningModels */,
+				C7A82835260FBAC900739FBA /* Helpers */,
+				C7A82818260FA8AA00739FBA /* Scenes */,
+				C7A82801260FA6DD00739FBA /* AppDelegate.swift */,
+				C7A82803260FA6DD00739FBA /* SceneDelegate.swift */,
+				C72BFE53261669170079A296 /* ASLPreferences.swift */,
+				C7A82807260FA6DD00739FBA /* Main.storyboard */,
+				C7A8280A260FA6DE00739FBA /* Assets.xcassets */,
+				C7A8280C260FA6DE00739FBA /* LaunchScreen.storyboard */,
+				C7A8280F260FA6DE00739FBA /* Info.plist */,
+			);
+			path = ASLInterpreter;
+			sourceTree = "<group>";
+		};
+		C7A82818260FA8AA00739FBA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C72BFE5526167C720079A296 /* Configuration */,
+				C7641C1A26109FF00029F621 /* Commom */,
+				C7641BF7261082D00029F621 /* Overlay */,
+				C7A82819260FA8BC00739FBA /* SourcePicker */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C7A82819260FA8BC00739FBA /* SourcePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C7A8282E260FB14500739FBA /* Views */,
+				C7A8281A260FA92700739FBA /* SourcePickerPresenter.swift */,
+				C7A8281B260FA92700739FBA /* SourcePickerWorker.swift */,
+				C7A8281C260FA92700739FBA /* SourcePickerRouter.swift */,
+				C7A8281D260FA92700739FBA /* SourcePickerModels.swift */,
+				C7A8281E260FA92700739FBA /* SourcePickerViewController.swift */,
+				C7A8281F260FA92700739FBA /* SourcePickerInteractor.swift */,
+			);
+			path = SourcePicker;
+			sourceTree = "<group>";
+		};
+		C7A8282E260FB14500739FBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7A8282F260FB14F00739FBA /* SourcePickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7A82835260FBAC900739FBA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7A82838260FBB6800739FBA /* Extensions.swift */,
+				C7641C3A2610A7260029F621 /* VisionUtils.swift */,
+				C7641C3C2610A7A80029F621 /* VisionProcessImage.swift */,
+				C76B82A326372EF7001DB426 /* ProcessGesture.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7A827FD260FA6DD00739FBA /* ASLInterpreter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A82812260FA6DE00739FBA /* Build configuration list for PBXNativeTarget "ASLInterpreter" */;
+			buildPhases = (
+				C7A827FA260FA6DD00739FBA /* Sources */,
+				C7A827FB260FA6DD00739FBA /* Frameworks */,
+				C7A827FC260FA6DD00739FBA /* Resources */,
+				C7A8282D260FADD800739FBA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASLInterpreter;
+			packageProductDependencies = (
+				C795E0C227821B0F00ECFE09 /* DGPExtensionCore */,
+				C795E0C527821B1C00ECFE09 /* DGPLibrary */,
+			);
+			productName = ASLInterpreter;
+			productReference = C7A827FE260FA6DD00739FBA /* ASLInterpreter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7A827F6260FA6DD00739FBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C7A827FD260FA6DD00739FBA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C7A827F9260FA6DD00739FBA /* Build configuration list for PBXProject "ASLInterpreter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7A827F5260FA6DD00739FBA;
+			packageReferences = (
+				C795E0C127821B0F00ECFE09 /* XCRemoteSwiftPackageReference "DGPExtensionCore" */,
+				C795E0C427821B1C00ECFE09 /* XCRemoteSwiftPackageReference "DGPLibrary" */,
+			);
+			productRefGroup = C7A827FF260FA6DD00739FBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7A827FD260FA6DD00739FBA /* ASLInterpreter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7A827FC260FA6DD00739FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A8280E260FA6DE00739FBA /* LaunchScreen.storyboard in Resources */,
+				C7A8280B260FA6DE00739FBA /* Assets.xcassets in Resources */,
+				C7A82809260FA6DD00739FBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7A827FA260FA6DD00739FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C785F9442631F19D004CD868 /* ASLHandPointShortV2.mlmodel in Sources */,
+				C7641C492610A94E0029F621 /* OverlayManagerInteractor.swift in Sources */,
+				C7641C1826109CA30029F621 /* ASLInterpreterView.swift in Sources */,
+				C7641C262610A1FB0029F621 /* VNHumanHandExtension.swift in Sources */,
+				C7641C03261083A90029F621 /* CameraModels.swift in Sources */,
+				C7A82821260FA92700739FBA /* SourcePickerWorker.swift in Sources */,
+				C7641C1126109BAB0029F621 /* ASLInterpreterWorker.swift in Sources */,
+				C7641C08261086E60029F621 /* CameraView.swift in Sources */,
+				C7641C01261083A90029F621 /* CameraWorker.swift in Sources */,
+				C7641C452610A94E0029F621 /* OverlayManagerWorker.swift in Sources */,
+				C72BFE67261688C20079A296 /* ConfigurationSliderViewCell.swift in Sources */,
+				C7A82825260FA92700739FBA /* SourcePickerInteractor.swift in Sources */,
+				C72BFE6B26168C890079A296 /* SwitchViewCell.swift in Sources */,
+				C7641C462610A94E0029F621 /* OverlayManagerRouter.swift in Sources */,
+				C7641C05261083A90029F621 /* CameraInteractor.swift in Sources */,
+				C7641C1F2610A04A0029F621 /* LabelClass.swift in Sources */,
+				C785F9462631FA33004CD868 /* ASLHandPointShortV3.mlmodel in Sources */,
+				C7A82802260FA6DD00739FBA /* AppDelegate.swift in Sources */,
+				C7641C482610A94E0029F621 /* OverlayManagerViewController.swift in Sources */,
+				C7A82820260FA92700739FBA /* SourcePickerPresenter.swift in Sources */,
+				C72BFE5D26167C960079A296 /* ConfigurationWorker.swift in Sources */,
+				C7A82822260FA92700739FBA /* SourcePickerRouter.swift in Sources */,
+				C7A82830260FB14F00739FBA /* SourcePickerView.swift in Sources */,
+				C72BFE5C26167C960079A296 /* ConfigurationPresenter.swift in Sources */,
+				C72BFE6D26168E460079A296 /* ConfigurationPickerViewCell.swift in Sources */,
+				C76B82A02635B434001DB426 /* Hand.swift in Sources */,
+				C7641C3D2610A7A80029F621 /* VisionProcessImage.swift in Sources */,
+				C7641C472610A94E0029F621 /* OverlayManagerModels.swift in Sources */,
+				C7A82823260FA92700739FBA /* SourcePickerModels.swift in Sources */,
+				C7641C1326109BAB0029F621 /* ASLInterpreterModels.swift in Sources */,
+				C72BFE5F26167C960079A296 /* ConfigurationModels.swift in Sources */,
+				C72BFE5E26167C960079A296 /* ConfigurationRouter.swift in Sources */,
+				C7641C02261083A90029F621 /* CameraRouter.swift in Sources */,
+				C7A82804260FA6DD00739FBA /* SceneDelegate.swift in Sources */,
+				C7641C1526109BAB0029F621 /* ASLInterpreterInteractor.swift in Sources */,
+				C7641C00261083A90029F621 /* CameraPresenter.swift in Sources */,
+				C72BFE6026167C960079A296 /* ConfigurationViewController.swift in Sources */,
+				C76B82A426372EF7001DB426 /* ProcessGesture.swift in Sources */,
+				C72BFE6126167C960079A296 /* ConfigurationInteractor.swift in Sources */,
+				C72BFE54261669170079A296 /* ASLPreferences.swift in Sources */,
+				C7641C04261083A90029F621 /* CameraViewController.swift in Sources */,
+				C7B1314F26176A290025715C /* ButtonViewCell.swift in Sources */,
+				C785F9422630B9EB004CD868 /* ASLHandPointv6.mlmodel in Sources */,
+				C7A82839260FBB6800739FBA /* Extensions.swift in Sources */,
+				C7641C3B2610A7260029F621 /* VisionUtils.swift in Sources */,
+				C72BFE6426167D4F0079A296 /* ConfigurationView.swift in Sources */,
+				C7641C242610A1A70029F621 /* AnimatedTransitioning.swift in Sources */,
+				C72BFE6926168B020079A296 /* StepperViewCell.swift in Sources */,
+				C7641C222610A0A70029F621 /* BoundingBoxView.swift in Sources */,
+				C7641C1026109BAB0029F621 /* ASLInterpreterPresenter.swift in Sources */,
+				C76B82A12635B434001DB426 /* Finger.swift in Sources */,
+				C7641C1426109BAB0029F621 /* ASLInterpreterViewController.swift in Sources */,
+				C7A82824260FA92700739FBA /* SourcePickerViewController.swift in Sources */,
+				C7641C302610A4240029F621 /* ASLHandPointv5.mlmodel in Sources */,
+				C7641C442610A94E0029F621 /* OverlayManagerPresenter.swift in Sources */,
+				C7641C312610A4240029F621 /* ASLHandPointv4.mlmodel in Sources */,
+				C7B1314D261725AD0025715C /* BaseConfigurationCell.swift in Sources */,
+				C7641C1226109BAB0029F621 /* ASLInterpreterRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7A82807260FA6DD00739FBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A82808260FA6DD00739FBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7A8280C260FA6DE00739FBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A8280D260FA6DE00739FBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7A82810260FA6DE00739FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7A82811260FA6DE00739FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7A82813260FA6DE00739FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6C5CCM5T8;
+				INFOPLIST_FILE = ASLInterpreter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.danigp.ASLInterpreter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C7A82814260FA6DE00739FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6C5CCM5T8;
+				INFOPLIST_FILE = ASLInterpreter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.danigp.ASLInterpreter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7A827F9260FA6DD00739FBA /* Build configuration list for PBXProject "ASLInterpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A82810260FA6DE00739FBA /* Debug */,
+				C7A82811260FA6DE00739FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7A82812260FA6DE00739FBA /* Build configuration list for PBXNativeTarget "ASLInterpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A82813260FA6DE00739FBA /* Debug */,
+				C7A82814260FA6DE00739FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C795E0C127821B0F00ECFE09 /* XCRemoteSwiftPackageReference "DGPExtensionCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielios-hub/DGPExtensionCore";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C795E0C427821B1C00ECFE09 /* XCRemoteSwiftPackageReference "DGPLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielios-hub/DGPLibrary";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C795E0C227821B0F00ECFE09 /* DGPExtensionCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C795E0C127821B0F00ECFE09 /* XCRemoteSwiftPackageReference "DGPExtensionCore" */;
+			productName = DGPExtensionCore;
+		};
+		C795E0C527821B1C00ECFE09 /* DGPLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C795E0C427821B1C00ECFE09 /* XCRemoteSwiftPackageReference "DGPLibrary" */;
+			productName = DGPLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C7A827F6260FA6DD00739FBA /* Project object */;
+}
